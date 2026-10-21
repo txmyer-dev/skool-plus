@@ -1,0 +1,28 @@
+{
+  "name": "skool-plus",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "skool+ — draft replies in your voice on Skool, and post to any community from anywhere.",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "compile": "tsc --noEmit",
+    "bridge": "node bridge/server.mjs",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.124.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@wxt-dev/module-react": "^1.2.2",
+    "typescript": "^5.8.0",
+    "wxt": "^0.21.4"
+  }
+}
